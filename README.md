@@ -20,10 +20,10 @@ sudo sudo docker-compose up
 ### コマンド解説 
 ```sh
 # Dockerイメージを作成
-sudo sudo docker-compose build --no-cache
+sudo docker-compose build --no-cache
 
 # Dockerイメージからコンテナ作成、立ち上げ
-sudo sudo docker-compose up
+sudo docker-compose up
 
 # backend/config/database.ymlの設定でデータベース作成
 sudo docker-compose exec backend rails db:create
