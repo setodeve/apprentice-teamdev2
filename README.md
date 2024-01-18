@@ -2,7 +2,7 @@
 ## Docker関連
 
 ### git clone後、初回時コマンド
-前提 :  Docker Desktopがインストールされていること
+前提 :  Docker Desktopをたちあげていること
 https://www.docker.com/products/docker-desktop/
 
 ``` sh
@@ -12,6 +12,7 @@ sudo docker-compose exec backend rails db:create
 ```
 
 ### 初回以外コマンド
+前提 :  Docker Desktopをたちあげていること
 ``` sh
 sudo sudo docker-compose up
 ```
