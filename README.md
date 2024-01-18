@@ -28,6 +28,9 @@ sudo docker-compose up
 # backend/config/database.ymlの設定でデータベース作成
 sudo docker-compose exec backend rails db:create
 
+# テーブル再作成後、マイグレーションファイルを再適用
+sudo docker-compose exec backend rails db:migrate:reset
+
 # backendのDockerコンテナに入る
 sudo docker-compose exec -it backend bash
 
