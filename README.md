@@ -6,8 +6,8 @@
 https://www.docker.com/products/docker-desktop/
 
 ``` sh
-sudo sudo docker-compose build　--no-cache
-sudo sudo docker-compose up
+sudo docker-compose build　--no-cache
+sudo docker-compose up
 sudo docker-compose exec backend rails db:create
 ```
 
