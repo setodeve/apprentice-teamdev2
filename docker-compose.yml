@@ -34,7 +34,7 @@
         dockerfile: Dockerfile
       volumes:
         - ./frontend:/usr/src/app
-      command: sh -c "cd app && npm start"
+      command: sh -c "cd app &&  npm install && npm start"
       ports:
         - "3000:3000"
   volumes:
