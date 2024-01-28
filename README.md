@@ -6,9 +6,11 @@
 https://www.docker.com/products/docker-desktop/
 
 ``` sh
-sudo docker-compose build　--no-cache
+sudo docker-compose build --no-cache
 sudo docker-compose up
 sudo docker-compose exec backend rails db:create
+sudo docker-compose exec backend rails db:migrate
+sudo docker-compose exec backend rails db:seed
 ```
 
 ### 初回以外コマンド
@@ -27,6 +29,12 @@ sudo docker-compose up
 
 # backend/config/database.ymlの設定でデータベース作成
 sudo docker-compose exec backend rails db:create
+
+# マイグレーションファイルを適用
+sudo docker-compose exec backend rails db:migrate
+
+# seed.rbに書いてある内容に従いテストデータを生成する
+sudo docker-compose exec backend rails db:seed
 
 # テーブル再作成後、マイグレーションファイルを再適用
 sudo docker-compose exec backend rails db:migrate:reset
