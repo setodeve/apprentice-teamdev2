@@ -14,6 +14,7 @@ const IndexOtyakai = (props) =>{
           #プログラミング"
         date={new Date()}
         place="カフェ"
+        host="tanaka"
       />
       <Otyakai 
         img="https://picsum.photos/id/1/1000/200"
@@ -23,7 +24,7 @@ const IndexOtyakai = (props) =>{
           #プログラミング好き
           #プログラミング"
         date={new Date()}
-        place="カフェ"
+        host="tanaka"
       />
       <Otyakai 
         img="https://picsum.photos/id/1/1000/200"
@@ -33,7 +34,7 @@ const IndexOtyakai = (props) =>{
           #プログラミング好き
           #プログラミング"
         date={new Date()}
-        place="カフェ"
+        host="tanaka"
       />
     </div>
   )

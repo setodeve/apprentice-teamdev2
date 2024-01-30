@@ -18,6 +18,7 @@ const OtyakaiInfo = (props) =>{
           <div className="left-info">
             <div className="date">開催日:{props.date.getFullYear()}/{props.date.getMonth()}/{props.date.getDate()}</div>
             <div className="place">開催場所:{props.place}</div>
+            <div className="place">主催者:{props.host}</div>
           </div>
           <EngagementButtons/>
         </div>
