@@ -1,0 +1,47 @@
+
+.card {
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  width: 40%;
+  background-color: rgba(124, 193, 55, 0.4);
+  margin: 5px 0; 
+}
+
+
+.map {
+  width: 85%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.other-container{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.other-otyakai{
+  width: 85%;
+  height: 20px;
+  background-color: white;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 5px 5px;
+}
+
+.other-otyakai-title{
+  margin: 0 5%;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+.other-otyakai > div{
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0 8px;
+}
+
+
+
