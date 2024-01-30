@@ -1,0 +1,12 @@
+.like-button {
+  cursor: pointer;
+  margin-top: 7px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 28px; 
+  height: 28px;
+}
+
+.like-button:before {
+  margin-right: 5px;
+}
