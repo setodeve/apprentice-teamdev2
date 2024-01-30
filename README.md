@@ -16,7 +16,7 @@ sudo docker-compose exec backend rails db:seed
 ### 初回以外コマンド
 前提 :  Docker Desktopをたちあげていること
 ``` sh
-sudo docker-compose up
+sudo docker-compose build && sudo docker-compose up
 ```
 
 ### コマンド解説 

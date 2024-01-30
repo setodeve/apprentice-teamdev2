@@ -1,0 +1,35 @@
+p > span{
+  cursor: pointer;
+  color: #020BDB;
+  margin: 0 0 0 5px;
+  font-size: 1em;
+}
+
+.card-body {
+  padding: 0 20px;
+}
+
+.card-body h2 {
+  margin-top: 0;
+}
+
+.card-body p {
+  color: #626262;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.left-info{
+  margin: 0 0 0 15px;
+  font-size: 0.9em;
+  color: #626262;
+}
+
+.date .place {
+  font-size: 0.8em;
+}

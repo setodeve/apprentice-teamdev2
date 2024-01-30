@@ -2,7 +2,6 @@
 import './App.css';
 import axios from "axios";
 
-
 function App() {
   const testMethod = () => {
     axios
@@ -24,8 +23,9 @@ function App() {
   }
   
   return (
-    <button onClick={() => testMethod()}></button>
-    // <Button onClick={() => testMethod()}>ボタン</Button>
+    <>
+      <button onClick={() => testMethod()}></button>
+    </>
   );
 }
 
