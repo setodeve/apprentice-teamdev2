@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const testMethod = () => {
@@ -24,7 +25,13 @@ function App() {
   
   return (
     <>
-      <button onClick={() => testMethod()}></button>
+      <Routes>
+        <Route path="/" element={<button onClick={() => testMethod()}></button>} />
+        <Route path="/login" element={<div>login</div>} />
+        <Route path="/signup" element={<div>signup</div>} />
+        <Route path="/otyakais" element={<div>otyakais</div>} />
+        <Route path="/otyakai/:id" element={<div>otyakai</div>} />
+      </Routes>
     </>
   );
 }
