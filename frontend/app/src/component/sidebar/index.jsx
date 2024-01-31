@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import SidebarButton from "../sidebar-button";
+import SidebarButton from "../SidebarButton";
 import GreenButton from "../GreenButton";
 
 export default function Sidebar() {
