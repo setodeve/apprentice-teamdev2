@@ -1,3 +1,7 @@
+body {
+  font-family: "ヒラギノ丸ゴ ProN";
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn {
+  /* 個別でボタンに color,background-colorプロパティを指定してください */
+  border: unset;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }

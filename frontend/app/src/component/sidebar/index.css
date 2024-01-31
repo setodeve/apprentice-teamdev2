@@ -1,0 +1,25 @@
+.button-area {
+  padding-top: 45px;
+}
+
+.sidebar {
+  width: 25%; 
+  background-color: white;
+  height: 100vh;
+}
+
+.button-area {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.btn:hover{
+  background-color: whitesmoke;
+}
+
+.btn {
+  margin-bottom: 25px;
+  background-color: white;
+}
