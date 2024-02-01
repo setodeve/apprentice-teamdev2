@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_28_121051) do
   create_table "otyakais", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.text "detail"
-    t.date "date"
+    t.datetime "date"
     t.string "place"
     t.string "img"
     t.bigint "host_id"
@@ -25,12 +25,12 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_28_121051) do
   end
 
   create_table "participants", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "participant_id"
-    t.bigint "otyakai_id"
+    t.bigint "user_id", null: false
+    t.bigint "otyakai_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["otyakai_id"], name: "index_participants_on_otyakai_id"
-    t.index ["participant_id"], name: "index_participants_on_participant_id"
+    t.index ["user_id"], name: "index_participants_on_user_id"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -47,5 +47,5 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_28_121051) do
 
   add_foreign_key "otyakais", "users", column: "host_id"
   add_foreign_key "participants", "otyakais"
-  add_foreign_key "participants", "users", column: "participant_id"
+  add_foreign_key "participants", "users"
 end
