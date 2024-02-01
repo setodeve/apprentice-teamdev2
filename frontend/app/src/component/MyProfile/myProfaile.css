@@ -1,0 +1,9 @@
+.button-area {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  float: right;
+  width: 25%;
+}

@@ -1,15 +1,17 @@
 import React from "react";
-import InputArea from "../ImputArea/inputArea";
-import TextArea from "../TextArea/textArea";
+import Sidebar from "../Sidebar";
+import GreenButton from "../GreenButton";
+import ProfileInfo from "../ProfileInfo/profileInfo";
+
 
 export default function MyProfile() {
 
   return (
     <>
-      <InputArea label="名前"></InputArea>
-      <InputArea label="年齢"></InputArea>
-      <InputArea label="ユーザー名"></InputArea>
-      <TextArea label="自己紹介文"></TextArea>
+      <ProfileInfo></ProfileInfo>
+      <div className="button-area">
+        <GreenButton className="btn" name="編集する"></GreenButton>
+      </div>
     </>
   );
 }

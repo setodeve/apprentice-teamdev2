@@ -40,14 +40,12 @@ input {
   margin: 0 auto;
   margin-top: 30px;
   width: 80%;
-  background-color: #008300;
   margin-bottom: 50px;
 }
 
 
 button {
   float: right;
-  /* width: 25%; */
 }
 
 input {
