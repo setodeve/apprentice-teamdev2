@@ -4,6 +4,7 @@ import axios from "axios";
 import { Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react';
 import Header from './component/Header/Header';
+import OtyakaiList from './component/OtyakaiList';
 
 function App() {
   const testMethod = () => {
@@ -32,7 +33,7 @@ function App() {
         <Route path="/" element={<button onClick={() => testMethod()}></button>} />
         <Route path="/login" element={<div>login</div>} />
         <Route path="/signup" element={<div>signup</div>} />
-        <Route path="/otyakais" element={<div>otyakais</div>} />
+        <Route path="/otyakais" element={<OtyakaiList/>} />
         <Route path="/otyakai/:id" element={<div>otyakai</div>} />
       </Routes>
     </>
