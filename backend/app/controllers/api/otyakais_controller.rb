@@ -2,8 +2,17 @@ class Api::OtyakaisController < ApplicationController
   before_action :set_otyakai, only: [:show, :update, :destroy]
 
   def index
-    @otyakais = Otyakai.all
-    render json: @otyakais
+    @otyakais = Otyakai.eager_load(:user)
+    otyakaiList = []
+    @otyakais.each do |o| 
+      # 日時を文字列から日時の型に変換
+      o.date = o.date.to_date
+      # hostを追加
+      otyakaiList << o.as_json.merge({
+        host: o.user.name
+      })
+    end
+    render json: otyakaiList
   end
 
   def show
