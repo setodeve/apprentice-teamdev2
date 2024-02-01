@@ -27,7 +27,7 @@ textarea {
 
 input {
   border: none;
-  box-shadow: 2px 2px 3px  1px #66CC33;
+  /* box-shadow: 2px 2px 3px  1px #66CC33; */
   color: #005000;
 }
 

@@ -1,11 +1,15 @@
 import React from "react";
-import "./index.css";
+import InputArea from "../ImputArea/inputArea";
+import TextArea from "../TextArea/textArea";
 
-export default function Template() {
+export default function MyProfile() {
 
   return (
     <>
-      template
+      <InputArea label="名前"></InputArea>
+      <InputArea label="年齢"></InputArea>
+      <InputArea label="ユーザー名"></InputArea>
+      <TextArea label="自己紹介文"></TextArea>
     </>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import "./inputArea.css";
 
-export default function InputArea({label="label Propsに値を与えてください", type="text", value=""}) {
+export default function InputArea({label="label Propsに値を与えてください", type="text", defaultValue=""}) {
 
   return (
     <>
       <div className="input-area">
         <span className="input-label">{label}</span>
-        <input className="shadow" type={type} value={value}/>
+        <input className="shadow" type={type} defaultValue={defaultValue}/>
       </div>
     </>
   );

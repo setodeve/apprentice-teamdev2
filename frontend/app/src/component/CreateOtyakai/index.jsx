@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 import GreenButton from "../GreenButton";
-import InputArea from "../input-area/inputArea";
-import TextArea from "../textArea/textArea";
+import InputArea from "../ImputArea/inputArea";
+import TextArea from "../TextArea/textArea";
 
 export default function CreateOtyakai() {
 
