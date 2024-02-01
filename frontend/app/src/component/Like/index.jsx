@@ -1,10 +1,11 @@
 import React from "react";
 import "./index.css";
+import { FaRegHeart } from "react-icons/fa";
 
-const Like = (props) =>{
+const Like = () =>{
   return (
     <>
-      <img className="like-button" src="https://img.icons8.com/material-outlined/24/737373/like--v1.png" alt="like--v1"/>
+      <FaRegHeart className="like-button"/>
     </>
   )
 }
