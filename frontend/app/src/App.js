@@ -3,7 +3,7 @@ import './App.css';
 import axios from "axios";
 import { Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react';
-import Header from './Header';
+import Header from './component/Header/Header';
 
 function App() {
   const testMethod = () => {
@@ -27,6 +27,7 @@ function App() {
   
   return (
     <>
+      <HeaderInfo/>
       <Routes>
         <Route path="/" element={<button onClick={() => testMethod()}></button>} />
         <Route path="/login" element={<div>login</div>} />
@@ -38,7 +39,7 @@ function App() {
   );
 }
 
-const App = () => {
+const HeaderInfo = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const handleLogout = () => {

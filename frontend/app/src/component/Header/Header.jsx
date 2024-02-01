@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import SearchBar from '../Search-bar';
+import SearchBar from '../Search-bar/search-bar';
 
 const Header = ({ isLoggedIn, onLogout }) => {
   return (
@@ -11,7 +11,7 @@ const Header = ({ isLoggedIn, onLogout }) => {
         {isLoggedIn ? (
           <ul>
             <li><Link to="/profile">My Profile</Link></li>
-            <li><a href="#" onClick={onLogout}>Logout</a></li>
+            <li><a href="/" onClick={onLogout}>Logout</a></li>
             <li><SearchBar /></li>
           </ul>
         ) : (
