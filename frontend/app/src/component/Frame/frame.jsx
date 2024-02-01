@@ -1,7 +1,6 @@
-import React, { Children } from "react";
+import React from "react";
 import "./frame.css";
-import Sidebar from "../Sidebar";
-import ProfileInfo from "../ProfileInfo/profileInfo";
+import Sidebar from "../sidebar/";
 
 export default function Frame({component}) {
 
