@@ -1,7 +1,6 @@
 
 .create-otyakai {
   margin: 0 auto;
-  color: #008300;
   width: 500px;
 }
 
@@ -22,13 +21,11 @@ textarea {
   height: 200px;
   border: none;
   box-shadow: 2px 2px 3px  1px #66CC33;
-  color: #005000;
 }
 
 input {
   border: none;
   /* box-shadow: 2px 2px 3px  1px #66CC33; */
-  color: #005000;
 }
 
 .input-label {
