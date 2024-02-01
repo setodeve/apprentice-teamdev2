@@ -3,7 +3,7 @@ import './App.css';
 import axios from "axios";
 import { Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react';
-import Header from './component/Header';
+import Header from './component/Header/Header';
 
 function App() {
   const testMethod = () => {

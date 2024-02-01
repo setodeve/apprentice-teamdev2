@@ -1,7 +1,7 @@
 import React from 'react';
-import './index.css';
+import './Header.css';
 import { Link } from 'react-router-dom';
-import SearchBar from '../Search-bar';
+import SearchBar from '../Search-bar/search-bar';
 
 const Header = ({ isLoggedIn, onLogout }) => {
   return (
