@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'; // CSSファイルのインポート方法を変更
+import './search-bar.css'; // CSSファイルのインポート方法を変更
 
 const SearchBar = () => {
   return (
