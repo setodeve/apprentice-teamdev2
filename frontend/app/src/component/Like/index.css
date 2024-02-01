@@ -5,6 +5,7 @@
   display: inline-block;
   width: 28px; 
   height: 28px;
+  color:#626262;
 }
 
 .like-button:before {

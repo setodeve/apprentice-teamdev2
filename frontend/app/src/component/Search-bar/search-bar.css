@@ -1,0 +1,9 @@
+body {
+    font-family: "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ ProN", Meiryo, sans-serif;
+}
+
+.search-bar input {
+    padding: 5px; 
+    width: 200px; 
+    border-radius: 10px;
+}

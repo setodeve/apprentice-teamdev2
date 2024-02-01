@@ -1,6 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
 import axios from "axios";
+import { Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import Header from './component/Header/Header';
 
 function App() {
   const testMethod = () => {
@@ -24,9 +27,30 @@ function App() {
   
   return (
     <>
-      <button onClick={() => testMethod()}></button>
+      <HeaderInfo/>
+      <Routes>
+        <Route path="/" element={<button onClick={() => testMethod()}></button>} />
+        <Route path="/login" element={<div>login</div>} />
+        <Route path="/signup" element={<div>signup</div>} />
+        <Route path="/otyakais" element={<div>otyakais</div>} />
+        <Route path="/otyakai/:id" element={<div>otyakai</div>} />
+      </Routes>
     </>
   );
 }
+
+const HeaderInfo = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const handleLogout = () => {
+    setIsLoggedIn(false); 
+  };
+
+  return (
+    <div>
+      <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} />
+    </div>
+  );
+};
 
 export default App;
