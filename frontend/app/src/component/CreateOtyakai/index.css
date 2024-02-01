@@ -47,6 +47,7 @@ input {
 
 button {
   float: right;
+  /* width: 25%; */
 }
 
 input {
