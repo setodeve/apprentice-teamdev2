@@ -19,7 +19,7 @@ sudo docker-compose exec backend rails db:seed
 sudo docker-compose build && sudo docker-compose up
 ```
 
-### コマンド解説 
+### コマンド解説
 ```sh
 # Dockerイメージを作成
 sudo docker-compose build --no-cache
@@ -70,4 +70,4 @@ mysql
 | ---- | ---- |
 | backend(Rails) | 8080 |
 | frontend(React) | 3000 |
-| db(mysql) | 3306 |
+| db(mysql) | 3307 |
