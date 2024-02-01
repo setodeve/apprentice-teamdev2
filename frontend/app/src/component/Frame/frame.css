@@ -1,0 +1,9 @@
+.left-area {
+  float: left;
+  width: 25%;
+}
+
+.right-area {
+  float: right;
+  width: 75%;
+}

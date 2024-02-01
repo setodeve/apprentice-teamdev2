@@ -6,7 +6,7 @@ import OtyakaiInfo from "../OtyakaiInfo";
 const Otyakai = (props) =>{
   return (
     <>
-      <div className="card">
+      <div className="card shadow">
         <OtyakaiImg img={props.img}/>
         <OtyakaiInfo 
         img={props.img}

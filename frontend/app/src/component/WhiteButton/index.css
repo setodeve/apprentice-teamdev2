@@ -1,7 +1,6 @@
 .white_button {
   color: #2E8B57;
-  border: solid 1px;
-  border-color: #2E8B57;
+  border: none;
   background-color: white;
   padding: 5px 20px;
   text-align: center;
