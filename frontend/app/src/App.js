@@ -2,6 +2,8 @@
 import './App.css';
 import axios from "axios";
 import { Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import Header from './Header';
 
 function App() {
   const testMethod = () => {
@@ -35,5 +37,19 @@ function App() {
     </>
   );
 }
+
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const handleLogout = () => {
+    setIsLoggedIn(false); 
+  };
+
+  return (
+    <div>
+      <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} />
+    </div>
+  );
+};
 
 export default App;
