@@ -2,16 +2,18 @@ import React from "react";
 import "./index.css";
 import EngagementButtons from "../EngagementButtons";
 import ReactHashtag from "@mdnm/react-hashtag";
-
+import { Link } from "react-router-dom";
 const OtyakaiInfo = (props) =>{
   return (
     <>
         <div className="card-body">
-          <h3>{props.title}</h3>
+          <Link to={'/otyakais/' + props.id}>
+            <h3>{props.title}</h3>
+          </Link>
           <p>
-          <ReactHashtag>
-              {props.detail}
-          </ReactHashtag>
+            <ReactHashtag>
+                {props.detail}
+            </ReactHashtag>
           </p>
         </div>
         <div className="card-footer">

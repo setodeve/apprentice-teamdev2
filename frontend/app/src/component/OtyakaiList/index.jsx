@@ -4,7 +4,6 @@ import "./index.css";
 import Otyakai from "../Otyakai";
 import Frame from "../Frame/frame";
 
-
 const OtyakaiList = () =>{
   const [otyakais, setOtyakais] = useState([])
   useEffect(() => {
@@ -18,14 +17,16 @@ const OtyakaiList = () =>{
     <Frame component={
       <div className="index-container">
       {otyakais.map((o) => (
-          <Otyakai 
-            img={o.img}
-            title={o.name}
-            detail={o.detail}
-            date={new Date(o.date)}
-            place={o.place}
-            host={o.host}
-          />
+        <Otyakai 
+          key={o.id}
+          id={o.id}
+          img={o.img}
+          title={o.name}
+          detail={o.detail}
+          date={new Date(o.date)}
+          place={o.place}
+          host={o.host}
+        />
       ))}
     </div>
     }/>
