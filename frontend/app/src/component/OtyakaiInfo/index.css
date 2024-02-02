@@ -17,6 +17,15 @@ p > span{
   color: #626262;
 }
 
+.card-body > a{
+  text-decoration: none;
+  color: black;
+}
+
+.card-body > a:hover {
+  color: LimeGreen;
+}
+
 .card-footer {
   display: flex;
   justify-content: space-between;
