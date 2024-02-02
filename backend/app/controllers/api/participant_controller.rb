@@ -1,4 +1,15 @@
 class Api::ParticipantController < ApplicationController
+  def index
+    @participants = Participant.all
+    render json: @participants, status: 200
+  end
+
+  def show
+    @participant =  Participant.find_by(participant_params)
+    if @participant
+      render json: @participant, status: 200
+    end
+  end
 
   def create
     @participant =  Participant.new(participant_params)
@@ -10,7 +21,7 @@ class Api::ParticipantController < ApplicationController
   end
 
   def destroy
-    @participant =  Participant.find(params[:id])
+    @participant =  Participant.find_by(participant_params)
     if @participant.destroy
       render status: 200
     else

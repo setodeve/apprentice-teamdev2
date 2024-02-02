@@ -3,6 +3,6 @@ Rails.application.routes.draw do
     resources :test
     resources :otyakais
     resources :user
-    resources :participant, only: [:create, :destroy]
+    resources :participant
   end
 end
