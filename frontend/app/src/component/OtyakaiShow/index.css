@@ -1,4 +1,10 @@
 
+.show-container {
+  display: grid;
+  justify-items: center;
+  margin-top: 2%;
+}
+
 .card {
   border-radius: 8px;
   font-family: 'Arial', sans-serif;
@@ -7,7 +13,6 @@
   background-color: rgba(124, 193, 55, 0.4);
   margin: 5px 0; 
 }
-
 
 .map {
   width: 85%;

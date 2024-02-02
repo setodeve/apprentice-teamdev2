@@ -9,13 +9,14 @@ const Otyakai = (props) =>{
       <div className="card shadow">
         <OtyakaiImg img={props.img}/>
         <OtyakaiInfo 
-        img={props.img}
-        title={props.title}
-        detail={props.detail}
-        date={props.date}
-        place={props.place}
-        host={props.host}
-      />
+          id={props.id}
+          img={props.img}
+          title={props.title}
+          detail={props.detail}
+          date={props.date}
+          place={props.place}
+          host={props.host}
+        />
       </div>
     </>
   )
