@@ -2,11 +2,12 @@ class Api::UserController < ApplicationController
   before_action :set_current_user, only: [:show, :update]
 
   def index
-    render json: {test: "hello world"}
+    @users = User.all
+    render json: @users
   end
 
   def show 
-    render json: @current_user
+    render json: @user
   end
 
 
@@ -15,6 +16,6 @@ class Api::UserController < ApplicationController
 
   private 
   def set_current_user 
-    @current_user = User.find(params[:id])
+    @user = User.find(params[:id])
   end
 end
