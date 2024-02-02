@@ -16,7 +16,7 @@ const OtyakaiInfo = (props) =>{
         </div>
         <div className="card-footer">
           <div className="left-info">
-            <div className="date">開催日:{props.date.getFullYear()}/{props.date.getMonth()}/{props.date.getDate()}</div>
+            <div className="date">開催日:{props.date.getFullYear()}/{props.date.getMonth()+1}/{props.date.getDate()}</div>
             <div className="place">開催場所:{props.place}</div>
             <div className="place">主催者:{props.host}</div>
           </div>

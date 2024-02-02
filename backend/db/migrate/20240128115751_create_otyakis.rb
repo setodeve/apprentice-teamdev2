@@ -3,7 +3,7 @@ class CreateOtyakis < ActiveRecord::Migration[7.0]
     create_table :otyakais do |t|
       t.string :name
       t.text :detail
-      t.date :date
+      t.datetime :date
       t.string :place
       t.string :img
       t.bigint :host_id, index: true
