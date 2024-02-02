@@ -22,4 +22,6 @@
 .btn {
   margin-bottom: 25px;
   background-color: white;
+  text-decoration: none;
+  color: black;
 }

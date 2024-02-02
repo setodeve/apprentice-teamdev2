@@ -1,10 +1,11 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const GreenButton = (props) =>{
   return (
     <>
-      <button className="green_button">{props.name}</button>
+      <Link className="green_button" to={props.link}>{props.name}</Link>
     </>
   )
 }

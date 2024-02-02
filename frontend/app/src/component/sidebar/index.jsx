@@ -9,10 +9,10 @@ export default function Sidebar() {
     <>
       <div className="sidebar">
         <div className="button-area">
-          <SidebarButton text={"プロフィール"}/>
-          <SidebarButton text={"お気に入り"}/>
-          <SidebarButton text={"参加リスト"}/>
-          <GreenButton name={"お茶会作成"}/>
+          <SidebarButton link="/" text={"プロフィール"}/>
+          <SidebarButton link="/" text={"お気に入り"}/>
+          <SidebarButton link="/" text={"参加リスト"}/>
+          <GreenButton link="/hoge" name={"お茶会作成"}/>
         </div>
       </div>
     </>

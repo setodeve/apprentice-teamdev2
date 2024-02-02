@@ -1,10 +1,12 @@
-export default function SidebarButton({ preLogoClass = "hoge", postLogoClass = "hoge", text = "hoge" }) {
+import { Link } from "react-router-dom";
+
+export default function SidebarButton({ link = "/",  preLogoClass = "hoge", postLogoClass = "hoge", text = "hoge" }) {
   return (
     <>
-      <button className="sidebar-button btn">
+      <Link className="sidebar-button btn" to={link}>
         {/* 余裕があればフォントを追加したい */}
         {text}
-      </button>
+      </Link>
     </>
   );
 }
