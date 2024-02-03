@@ -2,8 +2,6 @@ class Otyakai < ApplicationRecord
   has_many :participants, dependent: :destroy
   belongs_to :user, foreign_key: :host_id
   has_many :users, through: :participants
-  has_one_attached :img
-
   def change_json()
       # 日時を文字列から日時の型に変換
       self.date = self.date.to_date

@@ -2,31 +2,27 @@ class Api::OtyakaisController < ApplicationController
   before_action :set_otyakai, only: [:show, :update, :destroy]
 
   def index
-    @otyakais = Otyakai.eager_load(:user)
+    @otyakais = Otyakai.eager_load(:user).reverse()
     otyakaiList = []
     @otyakais.each do |o| 
-      p o
       otyakaiList << o.change_json
     end
     render json: otyakaiList
   end
 
   def show
-    p @otyakai
     render json: @otyakai.change_json
   end
 
   def create
-    # p params
     @otyakai = Otyakai.new(otyakai_params)
-    # p @otyakai
-    if params[:img]
-      blob = ActiveStorage::Blob.create_after_upload!(
-        io: StringIO.new(decode(params[:img][:data]) + "\n"),
-        filename: params[:img][:name]
-      )
-      @otyakai.img.attach(blob)
-    end
+    # if params[:img]
+    #   blob = ActiveStorage::Blob.create_after_upload!(
+    #     io: StringIO.new(decode(params[:img][:data]) + "\n"),
+    #     filename: params[:img][:name]
+    #   )
+    #   @otyakai.img.attach(blob)
+    # end
     if @otyakai.save
       render json: @otyakai, status: :created
     else
