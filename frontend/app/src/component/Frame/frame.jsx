@@ -6,9 +6,6 @@ export default function Frame({component}) {
 
   return (
     <>
-      <div className="header">
-        {/* <Header></Header> */}
-      </div>
       <div className="main-area">
         <div className="left-area">
           <Sidebar></Sidebar>

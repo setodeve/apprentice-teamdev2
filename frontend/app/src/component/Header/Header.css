@@ -6,7 +6,7 @@
 /* Header.css */
 .header {
   background-color: #E6F3D9;
-  min-height: 50px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,13 +14,17 @@
   color: white;
 }
 
-.logo {
-  font-size: 1.5em;
+
+.logo img {
+  height: 50px; /* ロゴの高さを40pxに設定 */
+  width: auto;
 }
+
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  line-height: 80px;
 }
 
 nav ul li {
@@ -40,4 +44,8 @@ button {
 
 button:hover {
   background-color: #21a1f1;
+}
+
+nav ul li .search-bar {
+  display: inline-block;
 }

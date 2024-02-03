@@ -1,5 +1,5 @@
 class Api::UserController < ApplicationController
-  before_action :set_current_user, only: [:show, :update, :destroy]
+  before_action :ser_user, only: [:show, :update, :destroy]
 
   def index
     @users = User.all
@@ -33,7 +33,7 @@ class Api::UserController < ApplicationController
 
 
   private 
-  def set_current_user 
+  def ser_user 
     @user = User.find(params[:id])
   end
 
