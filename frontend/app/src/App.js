@@ -31,10 +31,10 @@ function App() {
     <>
       <HeaderInfo/>
       <Routes>
-        <Route path="/" element={<button onClick={() => testMethod()}></button>} />
+        {/* <Route path="/" element={<button onClick={() => testMethod()}></button>} /> */}
         <Route path="/login" element={<div>login</div>} />
         <Route path="/signup" element={<div>signup</div>} />
-        <Route path="/otyakais" element={<OtyakaiList/>} />
+        <Route path="/" element={<OtyakaiList/>} />
         <Route path="/otyakais/new" element={<CreateOtyakaiPage/>} />
         <Route path="/otyakais/:id" element={<OtyakaiShow />} />
       </Routes>

@@ -12,12 +12,15 @@
   justify-content: space-between;
   padding: 0 20px;
   color: white;
+  width: 98%;
+  position: fixed;
 }
 
 
 .logo img {
-  height: 50px; /* ロゴの高さを40pxに設定 */
+  height: 50px; 
   width: auto;
+  margin-left: 100px;
 }
 
 

@@ -1,4 +1,6 @@
-.card {
+/* OtyakaiShowファイルの .card と重複していて冗長 */
+
+/* .card {
   border-radius: 8px;
   font-family: 'Arial', sans-serif;
   overflow: hidden;
@@ -6,5 +8,5 @@
   background-color: rgba(124, 193, 55, 0.4);
   margin: 15px 0; 
   padding-bottom: 10px;
-}
+} */
 
