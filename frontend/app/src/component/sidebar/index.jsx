@@ -13,7 +13,7 @@ export default function Sidebar() {
     <>
       <div className="sidebar weak-shadow">
         <div className="button-area">
-          <SidebarButton text={<div><FaUser className="side-icon" />プロフィール</div>}/>
+          <SidebarButton text={<Link className="profile-button" to='/otyakais/new'><FaUser className="side-icon" />プロフィール</Link>}/>
           <SidebarButton text={<div><FaRegHeart className="side-icon" />お気に入り</div>}/>
           <SidebarButton text={<div><FaList className="side-icon" />参加リスト</div>}/>
           <GreenButton name={<Link className="create-otyakai-button" to='/otyakais/new'><GiTeapotLeaves className="side-icon"/>お茶会作成</Link>} />
