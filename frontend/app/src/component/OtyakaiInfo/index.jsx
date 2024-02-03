@@ -22,7 +22,7 @@ const OtyakaiInfo = (props) =>{
             <div className="place">開催場所:{props.place}</div>
             <div className="place">主催者:{props.host}</div>
           </div>
-          <EngagementButtons/>
+          <EngagementButtons id={props.id} join={props.join}/>
         </div>
     </>
   )

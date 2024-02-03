@@ -19,6 +19,16 @@ const OtyakaiShow = () =>{
     getOtyakai()
   },[params]);
 
+  async function checkParticipant(){
+    const res = await axios.get(`http://localhost:8080/api/participant/${otyakai.id}`, {
+      params: {
+        "user_id":1, /* TODO: 現在のユーザーを取得するようにする */
+        "otyakai_id":otyakai.id
+      }
+    });
+    return res ? true : false
+  }
+
   return (
     <>
       {
@@ -34,6 +44,7 @@ const OtyakaiShow = () =>{
               date={new Date(otyakai.date)}
               place={otyakai.place}
               host={otyakai.host}
+              join={checkParticipant}
             />
             <img className="map" src={map} alt="開催場所" />
       
