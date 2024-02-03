@@ -6,13 +6,15 @@ import SearchBar from '../Search-bar/search-bar';
 const Header = ({ isLoggedIn, onLogout }) => {
   return (
     <header className="header">
-      <div className="logo">Dev2-Apprentice</div> {/* TODO: ロゴが決まったら差し替える */}
+      <div className="logo">
+        <Link to="/"><img src="/image/app-logo.png" alt="app-dev2" /></Link>
+      </div>
       <nav>
         {isLoggedIn ? (
           <ul>
+            <li><SearchBar /></li>
             <li><Link to="/profile">My Profile</Link></li>
             <li><a href="/" onClick={onLogout}>Logout</a></li>
-            <li><SearchBar /></li>
           </ul>
         ) : (
           <ul>
