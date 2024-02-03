@@ -31,7 +31,8 @@ const OtyakaiInfo = (props) =>{
             >主催者:{props.host}</d>
           </div>
           <Tooltip 
-          id={tool_id} 
+          id={tool_id}
+          place='bottom'
           render={({ content, activeAnchor }) => (
             <span>
               名前 : {props.host}
