@@ -2,7 +2,7 @@ class Api::OtyakaisController < ApplicationController
   before_action :set_otyakai, only: [:show, :update, :destroy]
 
   def index
-    @otyakais = Otyakai.eager_load(:user)
+    @otyakais = Otyakai.eager_load(:user).reverse()
     otyakaiList = []
     @otyakais.each do |o| 
       otyakaiList << o.change_json
@@ -16,6 +16,13 @@ class Api::OtyakaisController < ApplicationController
 
   def create
     @otyakai = Otyakai.new(otyakai_params)
+    # if params[:img]
+    #   blob = ActiveStorage::Blob.create_after_upload!(
+    #     io: StringIO.new(decode(params[:img][:data]) + "\n"),
+    #     filename: params[:img][:name]
+    #   )
+    #   @otyakai.img.attach(blob)
+    # end
     if @otyakai.save
       render json: @otyakai, status: :created
     else
@@ -42,5 +49,9 @@ class Api::OtyakaisController < ApplicationController
 
     def otyakai_params
       params.require(:otyakai).permit(:name, :detail, :date, :place, :img, :host_id, :max_participants)
+    end
+
+    def decode(str)
+      Base64.decode64(str.split(',').last)
     end
 end

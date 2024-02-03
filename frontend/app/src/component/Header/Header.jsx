@@ -3,7 +3,7 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import SearchBar from '../Search-bar/search-bar';
 import GreenButton from '../GreenButton';
-import WhiteButton from '../WhiteButton';
+// import WhiteButton from '../WhiteButton';
 
 const Header = ({ isLoggedIn, onLogout }) => {
   return (
