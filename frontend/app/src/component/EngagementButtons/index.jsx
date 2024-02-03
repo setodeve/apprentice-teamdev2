@@ -34,9 +34,9 @@ const EngagementButtons = (props) =>{
         <span onClick={handleClick}>
         {
           joinState ?
-            <GreenButton name="行きます!!"/>
+            <GreenButton name="キャンセル"/>
           :
-            <WhiteButton name="行く?"/>
+            <WhiteButton name="参加する"/>
         }
         </span>
 
