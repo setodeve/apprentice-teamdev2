@@ -7,7 +7,7 @@ import WhiteButton from '../WhiteButton';
 
 const Header = ({ isLoggedIn, onLogout }) => {
   return (
-    <header className="header">
+    <header className="header weak-shadow">
       <div className="logo">
         <Link to="/"><img src="/image/app-logo.png" alt="app-dev2" /></Link>
       </div>
@@ -20,11 +20,8 @@ const Header = ({ isLoggedIn, onLogout }) => {
           </ul>
         ) : (
           <ul>
-            {/* <li><Link to="/signup">Signup</Link></li>
-            <li><Link to="/login">Logout</Link></li> */}
-
-            <li><GreenButton><Link to="/signup">Signup</Link></GreenButton></li>
-            <li><GreenButton><Link to="/login">Logout</Link></GreenButton></li>
+            <li><Link to="/signup"><GreenButton name="Sign Up" /></Link></li>
+            <li><Link to="/login"><GreenButton name="Login" /></Link></li>
           </ul>
         )}
       </nav>

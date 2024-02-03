@@ -7,7 +7,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="sidebar">
+      <div className="sidebar weak-shadow">
         <div className="button-area">
           <SidebarButton text={"プロフィール"}/>
           <SidebarButton text={"お気に入り"}/>
