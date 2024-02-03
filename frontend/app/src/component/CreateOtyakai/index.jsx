@@ -25,12 +25,10 @@ export default function CreateOtyakai() {
       detail: detail,
       place: place,
       date: date,
-      max_participants: place,
+      max_participants: maxParticipants,
       img: "https://picsum.photos/700/200?random=8",  /*画像固定*/
       host_id: hostId
     };
-
-
     try{
       axios.post(`http://localhost:8080/api/otyakais/`,{
         otyakai : data
