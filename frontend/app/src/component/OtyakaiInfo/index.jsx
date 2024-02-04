@@ -5,7 +5,6 @@ import ReactHashtag from "@mdnm/react-hashtag";
 import { Link } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
 const OtyakaiInfo = (props) =>{
-  console.log(props)
   const randmnum = Math.floor(Math.random() * 100000)
   const tool_id = 'my-tooltip-'+props.host_id+randmnum
   return (
@@ -24,11 +23,11 @@ const OtyakaiInfo = (props) =>{
           <div className="left-info">
             <div className="date">開催日:{props.date.getFullYear()}/{props.date.getMonth()+1}/{props.date.getDate()}</div>
             <div className="place">開催場所:{props.place}</div>
-            <d
+            <div
             data-tooltip-id={tool_id}
             data-tooltip-variant="success"
             className="place"
-            >主催者:{props.host}</d>
+            >主催者:{props.host}</div>
           </div>
           <Tooltip 
           id={tool_id}
