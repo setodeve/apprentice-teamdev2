@@ -15,7 +15,10 @@ const Otyakai = (props) =>{
           detail={props.detail}
           date={props.date}
           place={props.place}
-          host={props.host}
+          host={props.host.name}
+          profile={props.host.profile}
+          age={props.host.age}
+          host_id={props.host_id}
           join={props.join}
         />
       </div>

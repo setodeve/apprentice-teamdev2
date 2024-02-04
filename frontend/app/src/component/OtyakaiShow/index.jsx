@@ -43,7 +43,10 @@ const OtyakaiShow = () =>{
               detail={otyakai.detail}
               date={new Date(otyakai.date)}
               place={otyakai.place}
-              host={otyakai.host}
+              host={otyakai.host.name}
+              profile={otyakai.host.profile}
+              age={otyakai.host.age}
+              host_id={otyakai.host_id}
               join={checkParticipant}
             />
             <img className="map" src={map} alt="開催場所" />

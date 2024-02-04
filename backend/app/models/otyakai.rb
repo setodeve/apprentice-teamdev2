@@ -7,7 +7,7 @@ class Otyakai < ApplicationRecord
       self.date = self.date.to_date
       # hostを追加
       return self.as_json.merge({
-        host: self.user.name
+        host: self.user
       })
   end
 end

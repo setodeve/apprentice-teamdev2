@@ -1,7 +1,7 @@
 import React from "react";
 import "./profileInfo.css";
 import InputArea from "../ImputArea/inputArea";
-import TextArea from "../TextArea/textArea";
+import TextArea from "../textArea/textArea";
 
 export default function ProfileInfo() {
 

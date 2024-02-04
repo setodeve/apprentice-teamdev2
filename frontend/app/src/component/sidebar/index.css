@@ -31,6 +31,11 @@
   text-decoration: none;
 }
 
+.profile-button{
+  color:black;
+  text-decoration: none;
+}
+
 .side-icon{
   margin-right: 5px;
   vertical-align: -2px;
