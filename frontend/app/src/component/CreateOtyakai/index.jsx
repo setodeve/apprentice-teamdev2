@@ -33,7 +33,7 @@ export default function CreateOtyakai() {
       axios.post(`http://localhost:8080/api/otyakais/`,{
         otyakai : data
       }).then(()=>{
-        navigate('/otyakais');
+        navigate('/');
       })
     } catch (error) {      
       console.error('送信に失敗しました', error);
